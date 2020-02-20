@@ -61,7 +61,6 @@ const getReplacement = (match: string) => {
     .slice(0, -1)
     .replace("v", "ü")
     .replace("V", "Ü");
-  console.log(`getting replacement for`, match);
   for (const [base, vowel] of Object.entries(accentMap)) {
     if (word.indexOf(base) >= 0) {
       const vowelChar = vowel.match(/.\*/)[0];
