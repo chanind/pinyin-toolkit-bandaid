@@ -9,7 +9,7 @@ interface TransformerState {
 
 class Transformer extends Component<TransformerProps, TransformerState> {
   state: TransformerState = {
-    input: "ni3hao3ma5",
+    input: "ni3hao3ma",
   };
 
   render() {
@@ -28,10 +28,6 @@ class Transformer extends Component<TransformerProps, TransformerState> {
           value={this.state.input}
           onChange={evt => this.setState({ input: evt.target.value })}
         />
-        <div style={{ color: "#F00", fontSize: "10px" }}>
-          * Note: You will need to explicitly add 5 for neutral tones, ex
-          ta1men5
-        </div>
 
         {escapedOutput && (
           <p style={{ marginTop: "30px" }}>
